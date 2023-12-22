@@ -1,0 +1,44 @@
+{
+  "name": "@luban-ui/stylelint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Lu Ban ui Stylelint config",
+  "author": "Season Chen season.chen.i@foxmail.com> (https://github.com/ccqgithub/)",
+  "license": "MIT",
+  "homepage": "https://github.com/luban-dev/stylelint-config",
+  "keywords": [
+    "stylelint-config"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.5.1 || ^15.0.0 || ^16.0.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.32",
+    "postcss-scss": "^4.0.9",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-standard": "^35.0.0",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-prettier": "^5.0.0"
+  },
+  "devDependencies": {
+    "@luban-ui/eslint-config": "^1.0.0",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
