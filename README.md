@@ -11,7 +11,7 @@ npm i -D eslint @luban-ui/stylelint-config
 With ["type": "module"](https://nodejs.org/api/packages.html#type) in package.json (recommended):
 
 ```js
-// eslint.config.js
+// stylelint.config.js
 import luban from '@luban-ui/stylelint-config';
 
 export default {
@@ -23,7 +23,7 @@ export default {
 With CJS:
 
 ```js
-// eslint.config.js
+// stylelint.config.js
 const luban = require('@luban-ui/stylelint-config').default;
 
 module.exports = {
