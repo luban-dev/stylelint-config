@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-npm i -D eslint @luban-ui/eslint-config
+npm i -D eslint @luban-ui/stylelint-config
 ```
 
 ## Create config file
@@ -12,16 +12,22 @@ With ["type": "module"](https://nodejs.org/api/packages.html#type) in package.js
 
 ```js
 // eslint.config.js
-import luban from '@luban-ui/eslint-config';
+import luban from '@luban-ui/stylelint-config';
 
-export default luban();
+export default {
+  ...luban()
+  // ...other stylelint options
+};
 ```
 
 With CJS:
 
 ```js
 // eslint.config.js
-const luban = require('@luban-ui/eslint-config').default;
+const luban = require('@luban-ui/stylelint-config').default;
 
-module.exports = luban();
+module.exports = {
+  ...luban()
+  // ...other stylelint options
+};
 ```
