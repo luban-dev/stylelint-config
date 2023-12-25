@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-npm i -D eslint @luban-ui/stylelint-config
+npm i -D stylelint @luban-ui/stylelint-config
 ```
 
 ## Create config file
