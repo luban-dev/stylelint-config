@@ -14,8 +14,9 @@ With ["type": "module"](https://nodejs.org/api/packages.html#type) in package.js
 // stylelint.config.js
 import luban from '@luban-ui/stylelint-config';
 
+/** @type {import('stylelint').Config} */
 export default {
-  ...luban()
+  extends: [luban()]
   // ...other stylelint options
 };
 ```
@@ -27,7 +28,7 @@ With CJS:
 const luban = require('@luban-ui/stylelint-config').default;
 
 module.exports = {
-  ...luban()
+  extends: [luban()]
   // ...other stylelint options
 };
 ```

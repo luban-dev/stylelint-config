@@ -86,6 +86,7 @@ function luban() {
       ],
       "selector-class-pattern": ["[0-9a-zA-Z-_]+"],
       "scss/function-no-unknown": null,
+      "scss/dollar-variable-empty-line-before": null,
       "number-max-precision": null,
       "keyframes-name-pattern": null,
       "declaration-block-no-redundant-longhand-properties": null,

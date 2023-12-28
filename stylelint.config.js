@@ -1,5 +1,7 @@
 import luban from './dist/index.js';
 
+/** @type {import('stylelint').Config} */
 export default {
-  ...luban()
+  extends: [luban()]
+  // ...other stylelint options
 };

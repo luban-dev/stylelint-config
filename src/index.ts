@@ -60,10 +60,13 @@ export default function luban() {
         }
       ],
       'selector-class-pattern': ['[0-9a-zA-Z-_]+'],
-      'scss/function-no-unknown': null,
       'number-max-precision': null,
       'keyframes-name-pattern': null,
       'declaration-block-no-redundant-longhand-properties': null,
+      'scss/function-no-unknown': [true, {
+        ignoreFunctions: []
+      }],
+      'scss/dollar-variable-empty-line-before': null,
       'prettier/prettier': [true, prettierConfig]
     },
     overrides: [
